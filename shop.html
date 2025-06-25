@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zerobrine SMP Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logoserver.png" type="image/png">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --text-dark: #222;
+      --text-mid: #444;
+      --white: #ffffff;
+      --bg-overlay: rgba(255, 255, 255, 0.95);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: var(--text-dark);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      min-height: 65px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img.avatar {
+      height: 65px;
+      width: 65px;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .logo img.brand {
+      height: 27px;
+    }
+
+    .nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .shop-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 30px;
+    }
+
+    .shop-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .shop-header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .shop-item {
+      background: var(--white);
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .shop-item img {
+      max-width: 100px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+    }
+
+    .shop-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .shop-item p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      margin-bottom: 16px;
+    }
+
+    .shop-item button {
+      padding: 10px 20px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .shop-item button:hover {
+      background-color: #009cd8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img class="avatar" src="logoserver.png" alt="Minecraft Avatar">
+      </a>
+      <a href="home.html">
+        <img class="brand" src="image copy 2.png" alt="Ray's Nation Logo">
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="seasons.html">Seasons</a>
+      <a href="features.html">About</a>
+      <a href="https://discord.gg/EvXASN5E78" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <div class="shop-container">
+    <div class="shop-header">
+      <h1>Token Shop</h1>
+      <h2>GET YOURSELF A TOKEN BY JOINING THE SERVER </h2>
+    </div>
+    <div class="shop-grid">
+      <div class="shop-item">
+        <img src="zombie.png" alt="100 Tokens">
+        <h3>Zombie Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="skeleton.png" alt="500 Tokens">
+        <h3>Skeleton Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="spider.png" alt="1000 Tokens">
+        <h3>Spider Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="pig.png" alt="1000 Tokens">
+        <h3>Pig Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="creeper.png" alt="1000 Tokens">
+        <h3>Creeper Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="blaze.png" alt="1000 Tokens">
+        <h3>Blaze Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="guarduin.png" alt="1000 Tokens">
+        <h3>Guardian Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="snowgolem.png" alt="1000 Tokens">
+        <h3>Snow Golem Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="witherskeleton.png" alt="1000 Tokens">
+        <h3>Wither Skeleton Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="bat.png" alt="1000 Tokens">
+        <h3>Bat Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="wolf.png" alt="1000 Tokens">
+        <h3>Wolf Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="squid.png" alt="1000 Tokens">
+        <h3>Squid Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="enderman.png" alt="1000 Tokens">
+        <h3>Enderman Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="bee.png" alt="1000 Tokens">
+        <h3>Bee Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="horse.png" alt="1000 Tokens">
+        <h3>Horse Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="chicken.png" alt="1000 Tokens">
+        <h3>Chicken Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="ravager.png" alt="1000 Tokens">
+        <h3>Ravager Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="warden.png" alt="1000 Tokens">
+        <h3>Warden Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="witch.png" alt="1000 Tokens">
+        <h3>Witch Token</h3>
+        <button>Free</button>
+      </div>
+      <div class="shop-item">
+        <img src="enderdragon.png" alt="1000 Tokens">
+        <h3>Ender Dragon Token</h3>
+        <button>Free</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
