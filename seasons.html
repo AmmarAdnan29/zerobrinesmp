@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seasons - Zerobrine SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logoserver.png" type="image/png">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --text-dark: #222;
+      --text-mid: #444;
+      --white: #ffffff;
+      --bg-light: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 30px;
+      background-color: var(--white);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img.avatar {
+      height: 65px;
+      width: 65px;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .logo img.brand {
+      height: 27px;
+    }
+
+    .nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .season-wrapper {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .season-wrapper h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .season-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .season-card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+    }
+
+    .season-card p {
+      font-size: 1.05rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .current {
+      border-left: 6px solid var(--primary);
+      background-color: #e6f7ff;
+    }
+
+    .badge {
+      background-color: var(--primary);
+      color: white;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 30px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img class="avatar" src="logoserver.png" alt="Minecraft Avatar">
+      </a>
+      <a href="index.html">
+        <img class="brand" src="image copy 2.png" alt="Zerobrine SMP Logo">
+      </a>
+    </div>
+    <nav class="nav">
+    <a href="home.html">Home</a>
+    <a href="seasons.html">Seasons</a>
+    <a href="features.html">About</a>
+    <a href="https://discord.gg/EvXASN5E78" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <main class="season-wrapper">
+    <h1>Server Seasons</h1>
+
+    <div class="season-card">
+      <h2>Season 1 [Over]</h2>
+      <p><em>No info.</em></p>
+    </div>
+
+    <div class="season-card current">
+      <h2>Season 2 <span class="badge">Current Season</span></h2>
+      <p>
+        Season 2 introduces our fully-featured <strong>ZerobrineSMP</strong> system! Earn tokens by completing quests, mining ores, battling mobs, and participating in events. Spend tokens to unlock special items, boosts, and cosmetics. This season focuses on progression, fairness, and exciting content to keep players engaged!
+      </p>
+    </div>
+    
+  </main>
+
+</body>
+</html>

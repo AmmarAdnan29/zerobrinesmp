@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Zerobrine SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logoserver.png" type="image/png">
+  <style>
+    :root {
+      --primary: #00bfff;
+      --text-dark: #222;
+      --text-mid: #444;
+      --white: #ffffff;
+      --bg-overlay: rgba(255, 255, 255, 0.95);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: var(--text-dark);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      min-height: 65px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img.avatar {
+      height: 65px;
+      width: 65px;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .logo img.brand {
+      height: 27px;
+    }
+
+    .nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('https://i.imgur.com/O1YdEBl.jpeg') no-repeat center/cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--bg-overlay);
+    }
+
+    .overlay {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      z-index: 2;
+    }
+
+    .left {
+      max-width: 50%;
+    }
+
+    .left h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-mid);
+      margin-bottom: 8px;
+    }
+
+    .left h1 {
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .left p {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: inline-flex;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .copy-btn {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .show-btn {
+      background: #e0e0e0;
+      color: var(--text-dark);
+    }
+
+    .stats img {
+      max-width: 400px;
+      height: auto;
+      margin-left: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 1024px) {
+      .overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .left {
+        max-width: 100%;
+        text-align: left;
+      }
+
+      .stats {
+        width: 100%;
+        margin-top: 40px;
+      }
+
+      .stats img {
+        margin: 20px 0 0 0;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="home.html">
+        <img class="avatar" src="logoserver.png" alt="Minecraft Avatar">
+      </a>
+      <a href="home.html">
+        <img class="brand" src="image copy 2.png" alt="Ray's Nation Logo">
+      </a>
+    </div>
+    <nav class="nav">
+    <a href="home.html">Home</a>
+    <a href="seasons.html">Seasons</a>
+    <a href="features.html">About</a>
+    <a href="https://discord.gg/EvXASN5E78" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="left">
+        <h3>Survival Minecraft Server</h3>
+        <h1>Zerobrine.ddns.net:27132</h1>
+        <p>Join Zerobrine SMP — a friendly, powerful Minecraft server with land claiming, PvP battles, economy shops and community events!</p>
+        <div class="buttons">
+          <button class="btn copy-btn" onclick="copyIP()">Copy IP</button>
+        </div>
+      </div>
+      <div class="stats">
+        <img src="image copy.png" alt="Server Stats">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function copyIP() {
+      navigator.clipboard.writeText('zerobrine.ddns.net:27132');
+      alert('Server IP copied: zerobrine.ddns.net:27132');
+    }
+  </script>
+
+</body>
+</html>
